@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* Root Variables */
+:root {
+  --primary-color: rgb(230, 83, 60);
+  --secondary-color: rgba(255, 255, 255, 0.5);
+  --background-color: black;
+  --text-color: #fff;
+  --accent-color: #ff6347;
+
+  --font-family: "Inter", sans-serif;
+  /* font-family: "Dancing Script", cursive; */
+}
+
+/* Reset some default sty
+les */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: black;
+  /* background-color: var(--background-color); */
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Basic styles for the navbar */
+header {
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+  padding-top: 58px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styles */
+.logo h1 {
+  flex: 1;
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+}
+
+.nav-links li {
+  padding: 0 10px;
+  padding: 8px 20px 8px 20px;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+.nav-links a:hover {
+  border-radius: 46px;
+  background: rgb(230, 83, 60);
+
+  font-weight: 600;
+
+  padding: 8px 20px 8px 20px;
+}
+/* Hamburger menu styles */
+.hamburger-menu {
+  display: none; /* Initially hidden on larger screens */
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+
+/* Media Queries */
+/* navbar */
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide nav links on smaller screens */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #333;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  .nav-links li {
+    padding: 15px 0;
+  }
+
+  .hamburger-menu {
+    display: block; /* Show hamburger menu icon on smaller screens */
+  }
+
+  .hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+}
+/* ... */
+@media (max-width: 768px) {
+  .hero-content,
+  .habits-list,
+  .trainings-list,
+  .bmi-content,
+  .team-list,
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .training-item {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
