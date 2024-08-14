@@ -3,14 +3,11 @@
 /* Root Variables */
 :root {
   --primary-color: rgb(230, 83, 60);
-  /* --primary-color: var(--primary-color); */
   --secondary-color: rgba(255, 255, 255, 0.5);
   --background-color: black;
   --text-color: #fff;
   --accent-color: #ff6347;
-
   --font-family: "Inter", sans-serif;
-  /* font-family: "Dancing Script", cursive; */
 }
 
 /* Reset some default sty
@@ -36,7 +33,7 @@ body {
 }
 .section-sub-title {
   color: var(--secondary-color);
-  font-family: Inter;
+
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -82,6 +79,7 @@ header {
 .nav-links li {
   padding: 8px 20px;
   margin-right: 20px;
+  margin: 8px;
 }
 
 .nav-links a {
@@ -89,11 +87,10 @@ header {
   color: white;
 }
 
-.nav-links a:hover {
+.nav-links .home {
   background: var(--primary-color);
   font-weight: 600;
   border-radius: 46px;
-  padding: 8px 20px;
 }
 
 .hamburger-menu {
@@ -164,7 +161,9 @@ header {
   position: relative;
   width: 50%;
 }
-
+.circle-image {
+  display: none;
+}
 .hero-image img {
   max-width: 100%;
   height: auto;
@@ -195,7 +194,10 @@ header {
   align-items: center;
   gap: 12px;
 }
-
+.free-workout p,
+.video-tutorial p {
+  color: rgba(239, 237, 232, 0.65);
+}
 .circle {
   width: 40px;
   height: 40px;
@@ -319,7 +321,6 @@ header {
 
 .bmi-chart th {
   color: #ffffff;
-  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 120%;
@@ -330,7 +331,6 @@ header {
 .bmi-chart td {
   padding: 0.75rem;
   color: var(--secondary-color);
-  font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 120%;
@@ -700,6 +700,17 @@ footer {
   .footer-links {
     align-items: center;
   }
+  .video-tutorial {
+    position: relative;
+    width: 240px;
+  }
+  .circle-image {
+    position: absolute;
+    display: block;
+    left: 28px;
+    top: 40px;
+    width: 10%;
+  }
   .hero-text h2 {
     font-size: 38px;
   }
@@ -801,8 +812,14 @@ footer {
   .habits-list {
     flex-direction: column;
   }
+  .footer-content {
+    align-items: flex-start;
+    text-align: left;
+  }
+
   .footer-links {
-    gap: 1rem;
+    align-items: flex-start;
+    gap: 1.5rem;
   }
 
   .footer-links div {
