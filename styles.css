@@ -3,6 +3,7 @@
 /* Root Variables */
 :root {
   --primary-color: rgb(230, 83, 60);
+  /* --primary-color: var(--primary-color); */
   --secondary-color: rgba(255, 255, 255, 0.5);
   --background-color: black;
   --text-color: #fff;
@@ -34,7 +35,7 @@ body {
   letter-spacing: 0%;
 }
 .section-sub-title {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--secondary-color);
   font-family: Inter;
   font-size: 14px;
   font-weight: 400;
@@ -66,7 +67,7 @@ header {
 }
 
 .logo h1 {
-  color: rgb(230, 83, 60);
+  color: var(--primary-color);
   font-size: 36px;
   font-weight: 800;
 }
@@ -89,7 +90,7 @@ header {
 }
 
 .nav-links a:hover {
-  background: rgb(230, 83, 60);
+  background: var(--primary-color);
   font-weight: 600;
   border-radius: 46px;
   padding: 8px 20px;
@@ -130,7 +131,7 @@ header {
 }
 
 .hero-text p {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--secondary-color);
   margin: 28px 0;
   font-size: 16px;
 }
@@ -149,7 +150,7 @@ header {
 }
 
 .btn-primary {
-  background: rgb(230, 83, 60);
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -198,7 +199,7 @@ header {
 .circle {
   width: 40px;
   height: 40px;
-  background: rgb(230, 83, 60);
+  background: var(--primary-color);
   border-radius: 50%;
 }
 
@@ -212,7 +213,7 @@ header {
 .habits-list {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  
   margin-top: 50px;
 }
 
@@ -237,7 +238,7 @@ header {
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0.3px;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--secondary-color);
   margin-top: 6px;
   text-align: center;
 }
@@ -330,7 +331,7 @@ header {
 
 .bmi-chart td {
     padding: 0.75rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--secondary-color);
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -372,29 +373,7 @@ header {
     background-color: #e64a19;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .bmi-content {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .bmi-chart,
-    .bmi-form {
-        width: 100%;
-        margin-bottom: 1.5rem;
-    }
-
-    .bmi-form .form-row {
-        flex-direction: column;
-    }
-
-    .bmi-form input,
-    .bmi-form select {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-}
 /* Team Section */
 .team {
     padding: 2rem 0;
@@ -461,18 +440,6 @@ header {
     color: #ccc;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .team-member {
-        width: calc(50% - 1rem);
-    }
-}
-
-@media (max-width: 480px) {
-    .team-member {
-        width: 100%;
-    }
-}
 .membership{
   padding: 80px 0px;
 }
@@ -509,7 +476,7 @@ header {
 }
 
 .black-card {
-   background: rgb(230, 83, 60);
+   background: var(--primary-color);
     color: white;
 }
 
@@ -574,12 +541,12 @@ header {
 }
 
 .classic-card .learn-more {
-    border: 2px solid rgb(230, 83, 60);
-    color: rgb(230, 83, 60);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 .classic-card .join-now {
-    background: rgb(230, 83, 60);
+    background: var(--primary-color);
     color: #fff;
 }
 
@@ -590,16 +557,6 @@ header {
     text-align: center;
 }
 
-@media (max-width: 768px) {
-    .membership-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        max-width: 90%;
-    }
-}
 
 /* Footer */
 footer {
@@ -684,7 +641,51 @@ footer {
     font-size: 0.8rem;
     color: #bbb;
 }
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .bmi-content {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .bmi-chart,
+    .bmi-form {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .bmi-form .form-row {
+        flex-direction: column;
+    }
+
+    .bmi-form input,
+    .bmi-form select {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-member {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .membership-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .footer-content {
@@ -708,7 +709,7 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .footer-links {
         gap: 1rem;
     }
@@ -731,7 +732,18 @@ footer {
   .hero-text h2 {
     font-size: 38px;
   }
+.extra-mile{
+  flex-direction: column;
+ 
+}
 
+.extra-mile-image img {
+  width: 100%;
+  
+}
+.image-container img {
+  width: 100%;
+}
   .training-item {
     width: 100%;
     margin: 0.5rem 0;
