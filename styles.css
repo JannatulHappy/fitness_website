@@ -213,7 +213,7 @@ header {
 .habits-list {
   display: flex;
   justify-content: space-around;
-  
+
   margin-top: 50px;
 }
 
@@ -270,458 +270,429 @@ header {
 
 /* BMI Calculator Section */
 .bmi-calculator {
-    padding: 2rem 0;
-    color: #fff; /* White text color */
-    text-align: center;
+  padding: 2rem 0;
+  color: #fff; /* White text color */
+  text-align: center;
 }
 
 .section-title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
 }
 
 .section-sub-title {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    color: #b5b5b5;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #b5b5b5;
 }
-.bmi{
- background-color: #1c1c1c; /* Dark background color */
-    margin-top: 50px;
+.bmi {
+  background-color: #1c1c1c; /* Dark background color */
+  margin-top: 50px;
 }
 .bmi-content {
-   
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
 }
 
 .bmi-chart,
 .bmi-form {
-    padding: 2rem;
-    border-radius: 8px;
-    width: 48%;
-   
+  padding: 2rem;
+  border-radius: 8px;
+  width: 48%;
 }
 
 .bmi-chart h3,
 .bmi-form h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
 }
 
 .bmi-chart table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
 }
 
 .bmi-chart th {
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 120%;
-    text-align: left;
-    padding: 0.75rem;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  text-align: left;
+  padding: 0.75rem;
 }
 
 .bmi-chart td {
-    padding: 0.75rem;
-    color: var(--secondary-color);
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 120%;
-    text-align: left;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.75rem;
+  color: var(--secondary-color);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .bmi-form .form-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .bmi-form input,
 .bmi-form select {
-    width: 48%;
-    padding: 0.75rem;
-    border: 1px solid #555;
-    border-radius: 5px;
-    background-color: #444;
-    color: #fff;
+  width: 48%;
+  padding: 0.75rem;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
 }
 
 .bmi-form .activity-select {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #555;
-    border-radius: 5px;
-    background-color: #444;
-    color: #fff;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
 }
-.bmi-form button{
+.bmi-form button {
   text-align: left;
 }
 
 .btn-primary:hover {
-    background-color: #e64a19;
+  background-color: #e64a19;
 }
-
 
 /* Team Section */
 .team {
-    padding: 2rem 0;
-    text-align: center;
-    background-color: #000;
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #000;
 }
 
 .team h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
 }
 
 .team p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #bbb;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #bbb;
 }
 
 .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .team-member {
-    width: calc(33.333% - 1rem);
-    max-width: 300px;
+  width: calc(33.333% - 1rem);
+  max-width: 300px;
 }
 
 .image-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 8px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .image-container img {
-    width: 100%;
-   height: 272px;
-    display: block;
+  width: 100%;
+  height: 272px;
+  display: block;
 }
 
 .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-   
-    color: #fff;
-    text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+
+  color: #fff;
+  text-align: left;
 }
 
 .overlay h3 {
-    margin: 0;
-    font-size: 1.2rem;
+  margin: 0;
+  font-size: 1.2rem;
 }
 
 .overlay p {
-    margin: 0;
-    font-size: 1rem;
-    color: #ccc;
+  margin: 0;
+  font-size: 1rem;
+  color: #ccc;
 }
 
-.membership{
+.membership {
   padding: 80px 0px;
 }
 .membership-header {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .membership-header h1 {
-    font-size: 2rem;
-    
+  font-size: 2rem;
 }
 
 .membership-header p {
-    font-size: 1rem;
-    color: #666;
+  font-size: 1rem;
+  color: #666;
 }
 
 .membership-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card {
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1 1 300px;
-    max-width: 350px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  max-width: 350px;
 }
 
 .black-card {
-   background: var(--primary-color);
-    color: white;
+  background: var(--primary-color);
+  color: white;
 }
 
 .classic-card {
-    background-color: #ffffff;
-    color: #333;
+  background-color: #ffffff;
+  color: #333;
 }
 
 .card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .price {
-    font-size: 2.5rem;
-    margin: 10px 0;
+  font-size: 2.5rem;
+  margin: 10px 0;
 }
 
 .price span {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .info {
-    color: #999;
-    margin-bottom: 20px;
+  color: #999;
+  margin-bottom: 20px;
 }
 
 .benefit {
-    font-size: 1rem;
-    margin-bottom: 20px;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
-.learn-more, .join-now {
-    display: inline-block;
-    margin: 5px 0;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
+.learn-more,
+.join-now {
+  display: inline-block;
+  margin: 5px 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .learn-more {
-    background-color: transparent;
-    color: inherit;
-    border: 2px solid #fff;
+  background-color: transparent;
+  color: inherit;
+  border: 2px solid #fff;
 }
 
 .join-now {
-    background-color: black;
-    color: #333;
-    border: none;
+  background-color: black;
+  color: #333;
+  border: none;
 }
 
 .black-card .learn-more {
-    border: 2px solid #fff;
+  border: 2px solid #fff;
 }
 
 .black-card .join-now {
-    background-color: transparent;
-    color: #333;
-     border: 2px solid black;
+  background-color: transparent;
+  color: #333;
+  border: 2px solid black;
 }
 
 .classic-card .learn-more {
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 .classic-card .join-now {
-    background: var(--primary-color);
-    color: #fff;
+  background: var(--primary-color);
+  color: #fff;
 }
 
 .membership-footer {
-    font-size: 0.8rem;
-    color: #666;
-    margin-top: 30px;
-    text-align: center;
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 30px;
+  text-align: center;
 }
-
 
 /* Footer */
 footer {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 2rem 0;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 2rem 0;
 }
 
-
-
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap:140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 140px;
 }
 
 .footer-logo {
-    flex: 1;
-    margin-bottom: 1.5rem;
+  flex: 1;
+  margin-bottom: 1.5rem;
 }
 
 .footer-logo h1 {
-    font-size: 2rem;
-    color: #FF3E00; /* Matches the red in the image */
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #ff3e00; /* Matches the red in the image */
+  margin-bottom: 1rem;
 }
 
 .footer-logo p {
-    font-size: 0.9rem;
-    color: #bbb;
-    max-width: 400px;
+  font-size: 0.9rem;
+  color: #bbb;
+  max-width: 400px;
 }
 
 .footer-links {
-    display: flex;
-   flex:2;
-     gap:140px;
-    
-    justify-content: space-between;
-  
+  display: flex;
+  flex: 2;
+  gap: 140px;
+
+  justify-content: space-between;
 }
 
 .footer-links div {
-    flex: 1;
+  flex: 1;
 }
 
 .footer-links h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #fff;
 }
 
 .footer-links ul {
-    list-style: none;
+  list-style: none;
 }
 
 .footer-links ul li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-links ul li a {
-    color: #bbb;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.3s;
+  color: #bbb;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
 }
 
 .footer-links ul li a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .footer-bottom {
-    text-align: center;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid #333;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
 }
 
 .footer-bottom p {
-    font-size: 0.8rem;
-    color: #bbb;
+  font-size: 0.8rem;
+  color: #bbb;
 }
 /* Responsive adjustments */
-@media (max-width: 768px) {
-    .bmi-content {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .bmi-chart,
-    .bmi-form {
-        width: 100%;
-        margin-bottom: 1.5rem;
-    }
-
-    .bmi-form .form-row {
-        flex-direction: column;
-    }
-
-    .bmi-form input,
-    .bmi-form select {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-}
 /* Responsive Design */
 @media (max-width: 768px) {
-    .team-member {
-        width: calc(50% - 1rem);
-    }
-}
+  .team-member {
+    width: calc(50% - 1rem);
+  }
+  .membership-cards {
+    flex-direction: column;
+    align-items: center;
+  }
 
-@media (max-width: 480px) {
-    .team-member {
-        width: 100%;
-    }
-}
-@media (max-width: 768px) {
-    .membership-cards {
-        flex-direction: column;
-        align-items: center;
-    }
+  .card {
+    max-width: 90%;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .card {
-        max-width: 90%;
-    }
-}
-/* Responsive Design */
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
 
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }
+  .footer-links div {
+    margin-bottom: 1.5rem;
+  }
 
-    .footer-links div {
-        margin-bottom: 1.5rem;
-    }
-
-    .footer-logo {
-        margin-bottom: 2rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .footer-links {
-        gap: 1rem;
-    }
-
-    .footer-links div {
-        width: 100%;
-    }
+  .footer-logo {
+    margin-bottom: 2rem;
+  }
 }
 
 /* Media query for responsiveness */
 
 @media (max-width: 576px) {
+  .bmi-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bmi-chart,
+  .bmi-form {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .bmi-form .form-row {
+    flex-direction: column;
+  }
+
+  .bmi-form input,
+  .bmi-form select {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
   .habits-list,
   .trainings-list,
   .bmi-content,
@@ -732,18 +703,19 @@ footer {
   .hero-text h2 {
     font-size: 38px;
   }
-.extra-mile{
-  flex-direction: column;
- 
-}
+  .extra-mile {
+    flex-direction: column;
+  }
 
-.extra-mile-image img {
-  width: 100%;
-  
-}
-.image-container img {
-  width: 100%;
-}
+  .extra-mile-image img {
+    width: 100%;
+  }
+  .team-member {
+    width: 100%;
+  }
+  .image-container img {
+    width: 100%;
+  }
   .training-item {
     width: 100%;
     margin: 0.5rem 0;
@@ -828,5 +800,12 @@ footer {
   }
   .habits-list {
     flex-direction: column;
+  }
+  .footer-links {
+    gap: 1rem;
+  }
+
+  .footer-links div {
+    width: 100%;
   }
 }
