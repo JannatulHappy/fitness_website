@@ -36,7 +36,11 @@ body {
 }
 
 header {
-  background: linear-gradient(180deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
   padding-top: 40px;
 }
 
@@ -107,7 +111,7 @@ header {
 }
 
 .hero-text .shape {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 .hero-text p {
@@ -149,6 +153,7 @@ header {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+  padding-left: 135px;
 }
 
 .free-workout,
@@ -163,7 +168,7 @@ header {
 }
 
 .free-workout {
-  top: 20px;
+  top: 150px;
   right: 20px;
 }
 
@@ -182,58 +187,91 @@ header {
   border-radius: 50%;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
+/* Habits Section */
+.habits {
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 80px;
+}
+.section-title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+.section-sub-title {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin-top: 14px;
+}
+.habits-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
 
-  .hero-text,
-  .hero-image {
-    width: 100%;
-  }
+.habit-item {
+  margin: 1rem;
+  max-width: 200px;
+}
 
-  .hero-text h2 {
-    font-size: 58px;
-  }
+.habit-item img {
+  width: 100%;
+  border-radius: 50%;
+}
 
-  .hero-image img {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-
-  .free-workout,
-  .video-tutorial {
-    position: static;
-    margin: 10px 0;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #333;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    z-index: 1000;
-  }
-
-  .nav-links li {
-    padding: 15px 0;
-  }
-
-  .hamburger-menu {
-    display: block;
-  }
+.habit-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+.habit-item p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 6px;
+  text-align: center;
+}
+/* Extra Mile Section */
+.extra-mile {
+  background-color: var(--secondary-color);
+  padding: 2rem 0;
+  color: var(--text-color);
 }
 
 
-/* Media Queries */
-/* navbar */
+
 /* Media query for responsiveness */
-@media screen and (max-width: 576px) {
+
+@media (max-width: 576px) {
+  .habits-list,
+  .trainings-list,
+  .bmi-content,
+  .team-list,
+  .footer-links {
+    align-items: center;
+  }
+  .hero-text h2 {
+    font-size: 38px;
+  }
+
+  .training-item {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .hero-content {
+    flex-direction: column;
+    text-align: left;
+  }
   .nav-links {
     display: none; /* Hide nav links on smaller screens */
     flex-direction: column;
@@ -265,26 +303,51 @@ header {
   .hamburger-menu.active .bar:nth-child(3) {
     transform: translateY(-6px) rotate(-45deg);
   }
-}
-/* ... */
-@media (max-width: 576px) {
-  .habits-list,
-  .trainings-list,
-  .bmi-content,
-  .team-list,
-  .footer-links {
-    align-items: center;
+  .hero-text,
+  .hero-image {
+    width: 100%;
   }
-   .hero-text h2 {
-    font-size: 38px;
+
+  .hero-text h2 {
+    font-size: 58px;
   }
 
   .hero-image img {
     max-width: 100%;
+    margin: 0 auto;
+    padding-left: 0px;
+  }
+  .video-tutorial {
+    bottom: 220px;
+  }
+  .free-workout {
+    top: 50px;
+    right: 80px;
   }
 
-  .training-item {
+  .nav-links {
+    display: none;
+    flex-direction: column;
     width: 100%;
-    margin: 0.5rem 0;
+    background-color: #333;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .nav-links li {
+    padding: 15px 0;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+  .habits {
+    margin-top: 0px;
+  }
+  .habits-list {
+  flex-direction: column;
+   
   }
 }
