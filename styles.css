@@ -285,10 +285,12 @@ header {
     margin-bottom: 2rem;
     color: #b5b5b5;
 }
-
-.bmi-content {
-    background-color: #1c1c1c; /* Dark background color */
+.bmi{
+ background-color: #1c1c1c; /* Dark background color */
     margin-top: 50px;
+}
+.bmi-content {
+   
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -471,7 +473,250 @@ header {
         width: 100%;
     }
 }
+.membership{
+  padding: 80px 0px;
+}
+.membership-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+.membership-header h1 {
+    font-size: 2rem;
+    
+}
+
+.membership-header p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.membership-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    max-width: 350px;
+}
+
+.black-card {
+   background: rgb(230, 83, 60);
+    color: white;
+}
+
+.classic-card {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.price span {
+    font-size: 1rem;
+}
+
+.info {
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.benefit {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.learn-more, .join-now {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.learn-more {
+    background-color: transparent;
+    color: inherit;
+    border: 2px solid #fff;
+}
+
+.join-now {
+    background-color: black;
+    color: #333;
+    border: none;
+}
+
+.black-card .learn-more {
+    border: 2px solid #fff;
+}
+
+.black-card .join-now {
+    background-color: transparent;
+    color: #333;
+     border: 2px solid black;
+}
+
+.classic-card .learn-more {
+    border: 2px solid rgb(230, 83, 60);
+    color: rgb(230, 83, 60);
+}
+
+.classic-card .join-now {
+    background: rgb(230, 83, 60);
+    color: #fff;
+}
+
+.membership-footer {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .membership-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap:140px;
+}
+
+.footer-logo {
+    flex: 1;
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo h1 {
+    font-size: 2rem;
+    color: #FF3E00; /* Matches the red in the image */
+    margin-bottom: 1rem;
+}
+
+.footer-logo p {
+    font-size: 0.9rem;
+    color: #bbb;
+    max-width: 400px;
+}
+
+.footer-links {
+    display: flex;
+   flex:2;
+     gap:140px;
+    
+    justify-content: space-between;
+  
+}
+
+.footer-links div {
+    flex: 1;
+}
+
+.footer-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .footer-links div {
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-logo {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-links {
+        gap: 1rem;
+    }
+
+    .footer-links div {
+        width: 100%;
+    }
+}
 
 /* Media query for responsiveness */
 
